@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "Constants": ["src/process/constants"],
+      "Constants/*": ["src/process/constants/*"],
+      "Helpers": ["src/process/helpers"],
+      "Helpers/*": ["src/process/helpers/*"],
+      "Locales": ["src/process/locales"],
+      "Locales/*": ["src/process/locales/*"],
+      "Routes": ["src/process/routes"],
+      "Routes/*": ["src/process/routes/*"],
+
+      "Assets": ["src/show/assets"],
+      "Assets/*": ["src/show/assets/*"],
+      "Images": ["src/show/assets/images"],
+      "Images/*": ["src/show/assets/images/*"],
+      "Components": ["src/show/components"],
+      "Components/*": ["src/show/components/*"],
+      "Navigator": ["src/show/navigator"],
+      "Navigator/*": ["src/show/navigator/*"],
+      "Pages": ["src/show/pages"],
+      "Pages/*": ["src/show/pages/*"]
+    }
+  }
+}

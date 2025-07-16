@@ -18,9 +18,11 @@ export default [
       'react/display-name': 'off',
       'react/prop-types': 'off',
     },
+  },
+  {
     settings: {
       react: {
-        version: '19.0',
+        version: 'detect',
       },
     },
   },

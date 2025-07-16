@@ -4,8 +4,8 @@
   "bracketSpacing": true,
   "htmlWhitespaceSensitivity": "css",
   "jsxSingleQuote": true,
-  "plugins": ["prettier-plugin-tailwindcss"],
   "printWidth": 90,
   "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

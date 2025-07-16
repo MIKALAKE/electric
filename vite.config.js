@@ -1,14 +1,23 @@
 import { defineConfig } from 'vite';
 import { fileURLToPath, URL } from 'url';
 import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
+import flowbiteReact from 'flowbite-react/plugin/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), flowbiteReact()],
 
   resolve: {
     alias: [
+      {
+        find: 'Root/package.json',
+        replacement: fileURLToPath(new URL('./package.json', import.meta.url)),
+      },
+      {
+        find: 'Root/tailwind.config.js',
+        replacement: fileURLToPath(new URL('./tailwind.config.js', import.meta.url)),
+      },
+
       {
         find: 'Api',
         replacement: fileURLToPath(new URL('./src/process/api', import.meta.url)),
@@ -16,6 +25,10 @@ export default defineConfig({
       {
         find: 'Helpers',
         replacement: fileURLToPath(new URL('./src/process/helpers', import.meta.url)),
+      },
+      {
+        find: 'Hooks',
+        replacement: fileURLToPath(new URL('./src/process/hooks', import.meta.url)),
       },
       {
         find: 'Locales',
@@ -28,6 +41,12 @@ export default defineConfig({
       {
         find: 'Redux',
         replacement: fileURLToPath(new URL('./src/process/redux', import.meta.url)),
+      },
+      {
+        find: 'Repositories',
+        replacement: fileURLToPath(
+          new URL('./src/process/repositories', import.meta.url),
+        ),
       },
       {
         find: 'Routes',
